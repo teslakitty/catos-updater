@@ -1,19 +1,79 @@
 {
-  "name": "hard-number-suspend-w6iuz",
-  "productName": "hard-number-suspend-w6iuz",
-  "description": "My Electron application description",
-  "keywords": [],
+  "name": "catos-updater",
+  "productName": "CatOS Updater",
+  "description": "CatOS updater to update CatOS in Electron.",
+  "keywords": [
+    "catos",
+    "updater",
+    "electron"
+  ],
   "main": "./main.js",
   "version": "1.0.0",
   "author": "james",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "dependencies": {
-    "axios": "^1.9.0",
-    "electron-builder": "^26.0.12"
+    "axios": "^1.9.0"
   },
   "devDependencies": {
-    "electron": "36.3.1"
+    "electron": "36.3.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.teslakitty.catosupdater",
+    "productName": "CatOS Updater",
+    "copyright": "Copyright © 2025 teslakitty",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules",
+      "node_modules/axios/**"
+    ],
+    "linux": {
+      "target": ["deb", "AppImage"],
+      "category": "Utility",
+      "icon": "build/icons/icon.png",
+      "executableName": "catos-updater",
+      "description": "CatOS updater to update CatOS in Electron.",
+      "maintainer": "james <jameskuyt655@gmail.com>",
+      "packageCategory": "Utility",
+      "compression": "normal"
+    },
+    "deb": {
+      "compression": "xz",
+      "priority": "optional",
+      "depends": [
+        "libgtk-3-0",
+        "libnss3",
+        "libxss1",
+        "libasound2",
+        "libatk-bridge2.0-0",
+        "libglib2.0-0",
+        "libgconf-2-4",
+        "libcurl4",
+        "libdbus-glib-1-2",
+        "libgnome-keyring0",
+        "libsecret-1-0",
+        "libudev1",
+        "libwoff1",
+        "libjpeg-turbo8",
+        "libappindicator3-1",
+        "libnotify4",
+        "libgdk-pixbuf2.0-0",
+        "libatspi2.0-0",
+        "libcups2",
+        "libxdamage1",
+        "libxkbcommon0",
+        "libxrandr2",
+        "libxshmfence1",
+        "libxtst6",
+        "xdg-utils"
+      ]
+    },
+    "appImage": {}
   }
 }
