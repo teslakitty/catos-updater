@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333; /* Dark text */
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50; /* Green for CatOS theme */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#update-info {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#release-notes {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace; /* Good for code/notes */
+    resize: vertical; /* Allow user to resize */
+}
+
+#status-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff; /* Blue for status */
+}
+
+#download-progress {
+    width: 80%;
+    height: 25px;
+    margin-top: 15px;
+    appearance: none; /* Remove default browser styling */
+    border-radius: 5px;
+    overflow: hidden; /* Hide the default bar outside the border-radius */
+}
+
+/* Style for WebKit browsers (Chrome, Safari, etc.) */
+#download-progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+#download-progress::-webkit-progress-value {
+    background-color: #4CAF50; /* Green fill */
+    border-radius: 5px;
+    transition: width 0.1s ease;
+}
+
+/* Style for Firefox */
+#download-progress::-moz-progress-bar {
+    background-color: #4CAF50; /* Green fill */
+    border-radius: 5px;
+}
+
+/* Style for IE/Edge */
+#download-progress::-ms-fill {
+    background-color: #4CAF50; /* Green fill */
+    border-radius: 5px;
+}

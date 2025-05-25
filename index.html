@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CatOS Updater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CatOS Update Utility</h1>
+    <p id="current-version">Current Version: Loading...</p>
+    <button id="check-updates-btn">Check for Updates</button>
+    <div id="update-info" style="display: none;">
+        <p><strong>New Version Available:</strong> <span id="new-version"></span></p>
+        <p><strong>Release Notes:</strong></p>
+        <textarea id="release-notes" readonly rows="5"></textarea>
+        <button id="download-update-btn">Download and Install Update</button>
+    </div>
+    <p id="status-message"></p>
+    <progress id="download-progress" value="0" max="100" style="display: none;"></progress>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

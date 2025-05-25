@@ -1,0 +1,18 @@
+{
+  "name": "hard-number-suspend-w6iuz",
+  "productName": "hard-number-suspend-w6iuz",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "james",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "axios": "1.9.0"
+  },
+  "devDependencies": {
+    "electron": "36.3.1"
+  }
+}
