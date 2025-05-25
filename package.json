@@ -1,6 +1,6 @@
 {
   "name": "catos-updater",
-  "productName": "CatOS Updater",
+  "version": "1.0.0",
   "description": "CatOS updater to update CatOS in Electron.",
   "keywords": [
     "catos",
@@ -8,7 +8,6 @@
     "electron"
   ],
   "main": "./main.js",
-  "version": "1.0.0",
   "author": "james",
   "scripts": {
     "start": "electron .",
@@ -53,11 +52,8 @@
         "libasound2",
         "libatk-bridge2.0-0",
         "libglib2.0-0",
-        "libgconf-2-4",
         "libcurl4",
         "libdbus-glib-1-2",
-        "libgnome-keyring0",
-        "libsecret-1-0",
         "libudev1",
         "libwoff1",
         "libjpeg-turbo8",
